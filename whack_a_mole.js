@@ -45,6 +45,7 @@ function getMovedTheMole() {
 moles.forEach(mole => mole.addEventListener('click', plusOne));
 
 function start() {
+  scores.textContent = 0;
   getMovedTheMole();
   setTimeout(() => {
     moleDown();
